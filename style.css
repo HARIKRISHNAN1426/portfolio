@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* 🔹 BODY */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #e0e0e0;
+}
+
+/* 🔹 HEADER */
+header {
+    background: linear-gradient(90deg, #000428, #004e92);
+    padding: 40px;
+    text-align: center;
+    animation: slideDown 1.2s ease;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #bbdefb;
+}
+
+/* 🔹 NAVIGATION */
+nav a {
+    font-family: 'Roboto', sans-serif;
+    color: #bbdefb;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* 🔹 SECTIONS */
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: 35px auto;
+    background: #121212;
+    border-radius: 14px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+    animation: fadeIn 1.5s ease;
+}
+
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #64b5f6;
+}
+
+p {
+    line-height: 1.7;
+    color: #d0d0d0;
+}
+
+/* 🔹 SKILLS */
+.skills span {
+    display: inline-block;
+    background: linear-gradient(135deg, #1565c0, #1e88e5);
+    color: white;
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.skills span:hover {
+    transform: translateY(-8px) scale(1.08);
+    box-shadow: 0 0 20px rgba(30, 136, 229, 0.8);
+    background: linear-gradient(135deg, #0d47a1, #42a5f5);
+}
+
+/* 🔹 PROJECTS */
+.project {
+    background: #1c1c1c;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 6px solid #1e88e5;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+}
+
+/* 🔹 CONTACT */
+.contact a {
+    display: block;
+    margin: 14px 0;
+    text-decoration: none;
+    color: #90caf9;
+    font-weight: 500;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.contact a:hover {
+    transform: translateX(10px);
+    color: #ffffff;
+}
+
+/* 🔹 FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000428;
+    color: #bbdefb;
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 🔹 ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-60px); }
+    to { opacity: 1; transform: translateY(0); }
+}
